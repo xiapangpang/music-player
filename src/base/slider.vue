@@ -53,34 +53,34 @@ export default {
       }
       this._setSliderWidth(true) //resize时不能再加宽度，不*2,也要给_setSliderWidth传一个标志位
       this.slider.refresh() //重新计算宽度后刷新
-      //  clearTimeout(this.resizeTimer)
-      //   this.resizeTimer = setTimeout(() => {
-      //     if (this.slider.isInTransition) {
-      //       this._onScrollEnd()
-      //     } else {
-      //       if (this.autoPlay) {
-      //         this._play()
-      //       }
+      // clearTimeout(this.resizeTimer)
+      // this.resizeTimer = setTimeout(() => {
+      //   if (this.slider.isInTransition) {
+      //     this._onScrollEnd()
+      //   } else {
+      //     if (this.autoPlay) {
+      //       this._play()
       //     }
-      //     this.refresh()
-      //   }, 60)
+      //   }
+      //   this.refresh()
+      // }, 60)
     })
   },
   activated() {
-  //   this.slider.enable()
-  //   let pageIndex = this.slider.getCurrentPage().pageX
-  //   this.slider.goToPage(pageIndex, 0, 0)
-  //   this.currentPageIndex = pageIndex
+    this.slider.enable()
+    // let pageIndex = this.slider.getCurrentPage().pageX
+    // this.slider.goToPage(pageIndex, 0, 0)
+    // this.currentPageIndex = pageIndex
     if (this.autoPlay) {
       this._play()
     }
   },
   deactivated() {
-  //   this.slider.disable()
+    this.slider.disable()
     clearTimeout(this.timer)
   },
   beforeDestroy() {
-  //   this.slider.disable()
+    this.slider.disable()
     clearTimeout(this.timer)
   },
   methods: {

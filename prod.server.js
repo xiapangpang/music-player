@@ -33,14 +33,11 @@ module.exports = app.listen(port, function (err) {
 // })
 // app.listen(3000)
 
-
 // var express = require('express')
 // var config = require('./config/index')
 // var axios = require('axios')
 
 // var app = express()
-
-
 
 // var apiRoutes = express.Router()
 // apiRoutes.get('/getList', function (req, res) {

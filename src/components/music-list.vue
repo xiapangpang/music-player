@@ -160,96 +160,96 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import '../common/stylus/variable'
-@import '../../common/stylus/mixin'
+  @import '../common/stylus/variable'
+  @import '../common/stylus/mixin'
 
-.music-list
-  position fixed
-  z-index 100
-  top 0
-  left 0
-  bottom 0
-  right 0
-  background $color-background
-  // .bg-image
-  //   position relative
-  //   width 100%
-  //   height 300px
-  //   background-size cover
-  .bg-image  //图片加载前就已知道固定高度，设定scroll组件的top值
-    position relative
-    width 100%
-    height 0
-    padding-top 70% //控制宽高比10：7提前占位
-    transform-origin top //配合scale往下拉bg-image时从上往下放大
-    background-size cover
-    .filter
+  .music-list
+    position fixed
+    z-index 100
+    top 0
+    left 0
+    bottom 0
+    right 0
+    background $color-background
+    // .bg-image
+    //   position relative
+    //   width 100%
+    //   height 300px
+    //   background-size cover
+    .bg-image  //图片加载前就已知道固定高度，设定scroll组件的top值
+      position relative
+      width 100%
+      height 0
+      padding-top 70% //控制宽高比10：7提前占位
+      transform-origin top //配合scale往下拉bg-image时从上往下放大
+      background-size cover
+      .filter
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background rgba(7, 17, 27, 0.4)
+      .play-wrapper
+        position absolute
+        bottom 20px
+        z-index 50
+        width 100%
+        .play
+          box-sizing border-box
+          width 135px
+          padding 7px 0
+          margin 0 auto
+          text-align center
+          border 1px solid $color-theme
+          color $color-theme
+          border-radius 100px
+          font-size 0
+          .icon-play
+            display inline-block
+            vertical-align middle
+            margin-right 6px
+            font-size $font-size-medium-x
+          .text
+            display inline-block
+            vertical-align middle
+            font-size $font-size-small
+    .back
       position absolute
       top 0
-      left 0
-      width 100%
-      height 100%
-      background rgba(7, 17, 27, 0.4)
-    .play-wrapper
-      position absolute
-      bottom 20px
+      left 6px
       z-index 50
-      width 100%
-      .play
-        box-sizing border-box
-        width 135px
-        padding 7px 0
-        margin 0 auto
-        text-align center
-        border 1px solid $color-theme
+      .icon-back
+        display block
+        padding 10px
+        font-size $font-size-large-x
         color $color-theme
-        border-radius 100px
-        font-size 0
-        .icon-play
-          display inline-block
-          vertical-align middle
-          margin-right 6px
-          font-size $font-size-medium-x
-        .text
-          display inline-block
-          vertical-align middle
-          font-size $font-size-small
-  .back
-    position absolute
-    top 0
-    left 6px
-    z-index 50
-    .icon-back
-      display block
-      padding 10px
-      font-size $font-size-large-x
-      color $color-theme
-  .title
-    position absolute
-    top 0
-    left 10%
-    z-index 40
-    width 80%
-    no-wrap()
-    text-align center
-    line-height 40px
-    font-size $font-size-large
-    color $color-text
-  .list
-    position absolute
-    top 0
-    bottom 0
-    width 100%
-    background $color-background
-    .song-list-wrapper
-      padding 20px 30px
-    .loading-container
+    .title
       position absolute
+      top 0
+      left 10%
+      z-index 40
+      width 80%
+      no-wrap()
+      text-align center
+      line-height 40px
+      font-size $font-size-large
+      color $color-text
+    .list
+      position absolute
+      top 0
+      bottom 0
       width 100%
-      top 50%
-      transform translateY(-50%)
-  .bg-layer
-    position relative
-    height 100%
-    background $color-background
+      background $color-background
+      .song-list-wrapper
+        padding 20px 30px
+      .loading-container
+        position absolute
+        width 100%
+        top 50%
+        transform translateY(-50%)
+    .bg-layer
+      position relative
+      height 100%
+      background $color-background
 </style>

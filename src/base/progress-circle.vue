@@ -37,17 +37,17 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import "../common/stylus/variable"
+  @import "../common/stylus/variable"
 
-.progress-circle
-  position relative
-  circle
-    stroke-width 8px
-    transform-origin center
-    &.progress-background
-      transform scale(0.9) //缩小一点更趋近圆
-      stroke $color-theme-d
-    &.progress-bar
-      transform scale(0.9) rotate(-90deg) //-90 倒着转
-      stroke $color-theme
+  .progress-circle
+    position relative
+    circle
+      stroke-width 8px
+      transform-origin center
+      &.progress-background
+        transform scale(0.9) //缩小一点更趋近圆
+        stroke $color-theme-d
+      &.progress-bar
+        transform scale(0.9) rotate(-90deg) //-90 倒着转
+        stroke $color-theme
 </style>

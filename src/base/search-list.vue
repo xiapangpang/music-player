@@ -34,25 +34,25 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import "../common/stylus/variable"
-@import "../common/stylus/variable"
+  @import "../common/stylus/variable"
+  @import "../common/stylus/mixin"
 
-.search-list
-  .search-item
-    display flex
-    height 40px
-    align-items center
-    overflow hidden
-    &.list-enter-active, &.list-leave-active
-      transition all .1s
-    &.list-enter, &.list-leave-to
-      height 0
-    .text
-      flex 1
-      color $color-text-l
-    .icon
-      extend-click()
-      .icon-delete
-        font-size $font-size-small
-        color $color-text-d
+  .search-list
+    .search-item
+      display flex
+      height 40px
+      align-items center
+      overflow hidden
+      &.list-enter-active, &.list-leave-active
+        transition all .1s
+      &.list-enter, &.list-leave-to
+        height 0
+      .text
+        flex 1
+        color $color-text-l
+      .icon
+        extend-click()
+        .icon-delete
+          font-size $font-size-small
+          color $color-text-d
 </style>

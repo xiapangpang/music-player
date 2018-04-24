@@ -14,7 +14,7 @@ export default {}
 
 <style lang="stylus" scoped>
   @import "../common/stylus/variable"
-  @import "../../common/stylus/mixin"
+  @import "../common/stylus/mixin"
 
   .m-header
     position relative

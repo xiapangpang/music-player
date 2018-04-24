@@ -53,44 +53,44 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-@import '../common/stylus/variable'
-@import '../../common/stylus/mixin'
+  @import "../common/stylus/variable"
+  @import "../common/stylus/mixin"
 
-.song-list
-  .item
-    display flex
-    align-items center
-    height 64px
-    font-size $font-size-medium
-    box-sizing border-box
-    .rank
-      flex 0 0 25px
-      width 25px
-      margin-right 30px
-      text-align center
-      .icon
-        display inline-block
+  .song-list
+    .item
+      display flex
+      align-items center
+      height 64px
+      font-size $font-size-medium
+      box-sizing border-box
+      .rank
+        flex 0 0 25px
         width 25px
-        height 24px
-        background-size 25px 24px
-        &.icon0
-          bg-image('first')
-        &.icon1
-          bg-image('second')
-        &.icon2
-          bg-image('third')
-      .text
-        color $color-theme
-        font-size $font-size-large
-    .content
-      flex 1
-      line-height 20px
-      overflow hidden
-      .name
-        no-wrap()
-        color $color-text
-      .desc
-        no-wrap()
-        color $color-text-d
-        margin-top 4px
+        margin-right 30px
+        text-align center
+        .icon
+          display inline-block
+          width 25px
+          height 24px
+          background-size 25px 24px
+          &.icon0
+            bg-image('first')
+          &.icon1
+            bg-image('second')
+          &.icon2
+            bg-image('third')
+        .text
+          color $color-theme
+          font-size $font-size-large
+      .content
+        flex 1
+        line-height 20px
+        overflow hidden
+        .name
+          no-wrap()
+          color $color-text
+        .desc
+          no-wrap()
+          color $color-text-d
+          margin-top 4px
 </style>
