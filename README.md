@@ -1,8 +1,14 @@
-# music
+[预览](https://xiapangpang.github.io/music-player/dist/index)
 
-> A Vue.js project
+####特点：
 
-## Build Setup
+基于vue + vue-router + vuex制作的音乐播放器，数据全部抓取自QQ音乐，模块化思想，实现了本地缓存。
+
+主要页面有推荐页、歌单详情页、歌手页、歌手详情页、播放器内核页、排行页、搜索页、添加歌曲页、个人中心页等。注释详细，亮点很多。
+
+（待更。。。）
+
+#### Build Setup：
 
 ``` bash
 # install dependencies
